@@ -3,7 +3,7 @@ import PigLatin
 main :: IO ()
 main = do
   putStr "\n"
-  mapM_ (\x -> print x) [test1, test2, test3, test4, test5, test6, test7]
+  mapM_ print [test1, test2, test3, test4, test5, test6, test7]
 
 test1 :: Bool
 test1 = translate "the quick brown fox jumps over th3" == "ethay uickqay ownbray oxfay umpsjay overyay th3"
