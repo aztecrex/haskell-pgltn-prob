@@ -6,10 +6,12 @@ main = do
   mapM_ (\x -> print x) [test1, test2, test3, test4]
 
 test1 :: Bool
-test1 = translate "the quick brown fox jumps over" == "ethay uickqay ownbray oxfay umpsjay overyay"
+test1 = translate "the quick brown fox jumps over th3" == "ethay uickqay ownbray oxfay umpsjay overyay th3"
 
-test2 = translate "one1" == "one1"
+test2 = translate "one1 2two" == "one1 2two"
 
 test3 = translate "thought x pig" == "oughtthay xay igpay"
 
 test4 = translate "at over" == "atyay overyay"
+
+test5 = translate ""
