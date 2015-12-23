@@ -15,3 +15,5 @@ test3 = translate "thought x pig" == "oughtthay xay igpay"
 test4 = translate "at over" == "atyay overyay"
 
 test5 = translate "one, two, three.\nnext  line." == "oneyay, otway, eethray.\nextnay  inelay."
+
+test6 = translate "" == ""
